@@ -7,8 +7,8 @@ jobs:
       - name: clone the repository
         uses: actions/checkout@v4
         
-      - name: install npm packages
-        run: npm install
+      - name: install npm 
+        run: install npm 
         
       - name: run npm 
         run: npm run build 
