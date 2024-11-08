@@ -1,5 +1,5 @@
-name: deploy react app
-on: push 
+name: deploy-react app
+on: push
 jobs:
   deploy-react-app:
     runs-on: ubuntu-latest
@@ -9,10 +9,9 @@ jobs:
         
       - name: npm install
         run: npm install
-        
-      - name: run npm 
-        run: npm run build 
-        
-      - name: npm  test
-        run: npm run test
-          
+
+      - name: run npm
+        run: npm run build
+      
+      - name: run test
+        run: npm run test
